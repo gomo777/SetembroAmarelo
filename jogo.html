@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop com Texto Digitado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="intro-section" id="introSection">
+        <h1>Bem-vindo ao Jogo da Alegria </h1>
+        <p>Neste jogo você terá a oportunidade de relembrar alguns dos momentos que tornam nossas vidas mais leves e felizes!</p>
+        
+        <button id="startButton">Começar</button>
+    </div>
+
+    <div class="container" id="gameContainer" style="display: none;">
+        <!-- Coluna Fixa com Imagens -->
+        <div class="fixed-column">
+            <h2>Fotos</h2>
+            <div class="drop-zone" id="drop-zone1">
+                <img src="imagens/foto1.jpg" alt="Foto 1" class="photo">
+                <p>Área para texto 1</p>
+            </div>
+            <div class="drop-zone" id="drop-zone2">
+                <img src="imagens/foto2.jpg" alt="Foto 2" class="photo">
+                <p>Área para texto 2</p>
+            </div>
+            <div class="drop-zone" id="drop-zone3">
+                <img src="imagens/foto3.jpg" alt="Foto 3" class="photo">
+                <p>Área para texto 3</p>
+            </div>
+        </div>
+        
+        <!-- Coluna de Arrastar com Texto Digitado -->
+        <div class="drag-column">
+            <h2>Conte-nos um pouco sobre um momento feliz que viveu de acordo com os elementos da imagem:</h2>
+            <div class="container">
+            <input  type="text" id="textInput" placeholder="Digite seu texto aqui">
+        </div>
+            <button id="createItem">Criar texto</button>
+            <div id="dragItemsContainer"></div>
+            <button id="finishButton" style="margin-top: 20px;">Finalizar</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+</html>
